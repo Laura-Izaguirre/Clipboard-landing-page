@@ -1,3 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.header {
+  background-image: url("./images/bg-header-mobile.png");
+  width: 100%;
+}
+.header .principal-icon {
+  width: 30%;
+  height: 30%;
+  padding-top: 5rem;
+}
+
+.main {
+  width: 90%;
+}
+.main .principal__caption {
+  color: hsl(210deg, 10%, 33%);
+}
+.main .principal__paragraph {
+  color: hsl(201deg, 11%, 66%);
+}
+.main .principal__button {
+  color: white;
+}
+.main .principal__iOS-button {
+  background-color: hsl(171deg, 66%, 44%);
+}
+.main .principal__Mac-button {
+  background-color: hsl(233deg, 100%, 69%);
+}
+.main__container__principal-content__caption {
+  color: hsl(210deg, 10%, 33%);
+}
+.main__container__principal-content__paragraph {
+  color: hsl(201deg, 11%, 66%);
+}
+.main__container__principal-content__image {
+  width: 90%;
+}
+.main__container__content__sub {
+  color: hsl(210deg, 10%, 33%);
+}
+.main__container__content__paragraph {
+  color: hsl(201deg, 11%, 66%);
+}
+.footer__list .list__item {
+  list-style: none;
+}
+.footer__list .list__item__link:link, .footer__list .list__item__link:visited {
+  color: hsl(210deg, 10%, 33%);
+  text-decoration: none;
+}
+.footer #desktop-design-list {
+  display: none;
+}
 
 /*# sourceMappingURL=style.css.map */
