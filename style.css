@@ -24,14 +24,31 @@ body {
 .main {
   width: 90%;
 }
+.main .principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8rem;
+}
 .main .principal__caption {
   color: hsl(210deg, 10%, 33%);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 .main .principal__paragraph {
   color: hsl(201deg, 11%, 66%);
+  margin-bottom: 1rem;
 }
 .main .principal__button {
   color: white;
+  width: 90%;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+  border-radius: 3rem;
+  text-decoration: none;
+}
+.main .principal__button:hover, .main .principal__button:active {
+  opacity: 80%;
 }
 .main .principal__iOS-button {
   background-color: hsl(171deg, 66%, 44%);
@@ -39,21 +56,41 @@ body {
 .main .principal__Mac-button {
   background-color: hsl(233deg, 100%, 69%);
 }
+.main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .main__container__principal-content__caption {
   color: hsl(210deg, 10%, 33%);
+  margin-bottom: 1rem;
 }
 .main__container__principal-content__paragraph {
   color: hsl(201deg, 11%, 66%);
+  margin-bottom: 1rem;
 }
 .main__container__principal-content__image {
   width: 90%;
+  margin: 3rem 0;
+}
+.main__container__content {
+  margin: 1rem 0;
 }
 .main__container__content__sub {
   color: hsl(210deg, 10%, 33%);
+  margin-bottom: 1rem;
 }
 .main__container__content__paragraph {
   color: hsl(201deg, 11%, 66%);
+  margin: 1rem;
 }
+.main__container__content__icon {
+  margin: 1rem 0;
+}
+.main__icons-container__icon {
+  margin: 2rem 0;
+}
+
 .footer__list .list__item {
   list-style: none;
 }

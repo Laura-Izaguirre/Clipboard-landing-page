@@ -24,16 +24,32 @@ body {
 .main {
     width: 90%;
     .principal {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        margin-bottom: 8rem;
         &__caption {
             color: hsl(210, 10%, 33%);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
         }
 
         &__paragraph {
             color: hsl(201, 11%, 66%);
+            margin-bottom: 1rem;
         }
 
         &__button {
             color: white;
+            width: 90%;
+            padding: 0.5rem 0;
+            margin: 0.5rem 0;
+            border-radius: 3rem;
+            text-decoration: none;
+        }
+
+        &__button:hover, &__button:active {
+            opacity: 80%;
         }
 
         &__iOS-button {
@@ -46,37 +62,53 @@ body {
     }
 
     &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         &__principal-content {
+
             &__caption {
                 color: hsl(210, 10%, 33%);
+                margin-bottom: 1rem;
             }
+
             &__paragraph {
                 color: hsl(201, 11%, 66%);
+                margin-bottom: 1rem;
 
             }
+
             &__image {
                 width: 90%;
+                margin: 3rem 0;
             }
         }
 
         &__content {
+            margin: 1rem 0;
+
             &__sub {
                 color: hsl(210, 10%, 33%);
+                margin-bottom: 1rem;
 
             }
+
             &__paragraph {
                 color: hsl(201, 11%, 66%);
+                margin: 1rem;
 
             }
-            &__icon {
 
+            &__icon {
+                margin: 1rem 0;
             }
         }
 
-        .icons-container {
-            &__icon {
+    }
 
-            }
+    &__icons-container {
+        &__icon {
+            margin: 2rem 0;
         }
     }
 
@@ -88,9 +120,13 @@ body {
     }
 
     &__list {
+
         .list {
+
             &__item { 
+
                 list-style: none;
+
                 &__link {
 
                 }
@@ -99,6 +135,11 @@ body {
                     color: hsl(210, 10%, 33%);
                     text-decoration: none;
                 }
+
+                &__link:hover, &__link:active {
+
+                }
+
             }
         }
     }
@@ -112,6 +153,7 @@ body {
     }
 
     &__icons {
+        
         &__social-media-icon {
 
         }
