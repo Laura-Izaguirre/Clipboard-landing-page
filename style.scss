@@ -13,6 +13,7 @@ body {
 
 .header {
     background-image: url("./images/bg-header-mobile.png");
+    background-repeat: no-repeat;
     width: 100%;
     .principal-icon {
         width: 30%;
@@ -44,7 +45,7 @@ body {
 
         &__button {
             color: white;
-            width: 90%;
+            width: 100%;
             padding: 0.5rem 0;
             margin: 0.5rem 0;
             border-radius: 3rem;
@@ -72,6 +73,11 @@ body {
         flex-direction: column;
         align-items: center;
         &__principal-content {
+            &__button-container {
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+            }
 
             &__caption {
                 color: hsl(210, 10%, 33%);
@@ -171,6 +177,148 @@ body {
         
         &__social-media-icon {
             padding: 0 1rem;
+        }
+    }
+}
+
+@media  screen and (min-width: 1440px) {
+    .header {
+        background-image: url("./images/bg-header-desktop.png");
+        background-size: cover;
+        width: 100%;
+        .principal-icon {
+            width: 07%;
+        }
+    }
+    
+    .main {
+
+        .principal {
+
+            &__caption {
+
+            }
+    
+            &__paragraph {
+
+            }
+    
+            &__button {
+                width: 20%;
+                margin: 0 1rem;
+
+            }
+    
+            &__button:hover, &__button:active {
+
+            }
+    
+            &__iOS-button {
+
+            }
+    
+            &__Mac-button {
+
+            }
+        }
+    
+        &__container {
+
+            &__principal-content {
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &__button-container {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    
+                }
+    
+                &__caption {
+
+                }
+    
+                &__paragraph {
+
+                }
+    
+                &__image {
+
+                    width: 50%;
+                    
+                }
+            }
+    
+            &__content {
+    
+                &__sub {
+    
+                }
+    
+                &__paragraph {
+    
+                }
+    
+                &__icon {
+
+                }
+            }
+    
+        }
+    
+        &__icons-container {
+
+            &__icon {
+
+            }
+        }
+    
+    }
+    
+    .footer {
+
+        &__icon {
+
+        }
+    
+        &__list {
+    
+            .list {
+    
+                &__item { 
+    
+                    &__link {
+    
+                    }
+    
+                    &__link:link, &__link:visited {
+
+                    }
+    
+                    &__link:hover, &__link:active {
+    
+                    }
+    
+                }
+            }
+        }
+    
+        #mobile-design-list {
+            display: none;   
+        }
+    
+        #desktop-design-list {
+            display: flex;
+        }
+    
+        &__icons {
+            
+            &__social-media-icon {
+
+            }
         }
     }
 }
