@@ -18,7 +18,8 @@ body {
 .header .principal-icon {
   width: 30%;
   height: 30%;
-  padding-top: 5rem;
+  padding-top: 8rem;
+  padding-bottom: 6rem;
 }
 
 .main {
@@ -28,16 +29,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 2rem;
   margin-bottom: 8rem;
 }
 .main .principal__caption {
   color: hsl(210deg, 10%, 33%);
-  margin-top: 2rem;
   margin-bottom: 1rem;
+  font-size: 2rem;
 }
 .main .principal__paragraph {
   color: hsl(201deg, 11%, 66%);
   margin-bottom: 1rem;
+  font-size: 1.1rem;
 }
 .main .principal__button {
   color: white;
@@ -46,6 +49,9 @@ body {
   margin: 0.5rem 0;
   border-radius: 3rem;
   text-decoration: none;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .main .principal__button:hover, .main .principal__button:active {
   opacity: 80%;
@@ -64,10 +70,12 @@ body {
 .main__container__principal-content__caption {
   color: hsl(210deg, 10%, 33%);
   margin-bottom: 1rem;
+  font-size: 1.8rem;
 }
 .main__container__principal-content__paragraph {
   color: hsl(201deg, 11%, 66%);
   margin-bottom: 1rem;
+  font-size: 1.1rem;
 }
 .main__container__principal-content__image {
   width: 90%;
@@ -79,20 +87,36 @@ body {
 .main__container__content__sub {
   color: hsl(210deg, 10%, 33%);
   margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 .main__container__content__paragraph {
   color: hsl(201deg, 11%, 66%);
   margin: 1rem;
+  font-size: 1.05rem;
 }
 .main__container__content__icon {
   margin: 1rem 0;
+}
+.main__icons-container {
+  padding: 4rem 0;
 }
 .main__icons-container__icon {
   margin: 2rem 0;
 }
 
+.footer {
+  background-color: rgb(245, 246, 248);
+  padding-top: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+.footer__icon {
+  width: 25%;
+  height: 25%;
+}
 .footer__list .list__item {
   list-style: none;
+  margin: 2rem 0;
 }
 .footer__list .list__item__link:link, .footer__list .list__item__link:visited {
   color: hsl(210deg, 10%, 33%);
@@ -100,6 +124,9 @@ body {
 }
 .footer #desktop-design-list {
   display: none;
+}
+.footer__icons__social-media-icon {
+  padding: 0 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
