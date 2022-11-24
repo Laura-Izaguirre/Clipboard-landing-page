@@ -131,6 +131,15 @@ body {
 }
 
 .footer {
+
+    .desktop-design-footer {
+        display: none;
+    }
+
+    .mobile-design-footer {
+        display: block;
+    }
+
     background-color: rgba(245,246,248,255);
     padding-top: 1rem;
     margin-top: 1rem;
@@ -228,13 +237,13 @@ body {
         }
     
         &__container {
-
+            
             &__flex {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-
-                &__img {
+                
+                &__img-container {
                     position: absolute;
                     
                     
@@ -242,8 +251,8 @@ body {
                     }
                 }
 
-                #prueba {
-                    width: 90%;
+                #cut-image {
+                    width: 100%;
                     position: relative;
                     left: -5rem;
                 }
@@ -281,22 +290,22 @@ body {
             }
     
             &__content {
-                text-align: center;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 width: 55%;
-
-
+                
+                
                 &__text-align {
                     text-align: left;
-                
                 }
+
+            
                 
                 &__sub {
                     font-size: 1.2rem;
                 }
-                
+
                 &__paragraph {
                     padding: 0;
                     margin: 0;
@@ -327,17 +336,45 @@ body {
     }
     
     .footer {
+        width: 100%;
+        height: 6rem;
+        
+        .mobile-design-footer {
+            display: none;
+        }
+        
+        .desktop-design-footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
 
         &__icon {
+            width: 40%;
 
+        }
+
+        #desktop-design-list {
+           display: flex;
+           flex-direction: row;
+           text-align: left;
         }
     
         &__list {
-    
+
+            
             .list {
-    
+                display: flex;
+                flex-direction: column;
+                
                 &__item { 
-    
+                    padding: 0;
+                    margin: 0;
+                    padding-top: 1rem;
+                    padding-right: 2rem;
+                    
+                    
                     &__link {
     
                     }
@@ -354,16 +391,9 @@ body {
             }
         }
     
-        #mobile-design-list {
-            display: none;   
-        }
-    
-        #desktop-design-list {
-            display: flex;
-        }
     
         &__icons {
-            
+            padding-left: 6rem;
             &__social-media-icon {
 
             }
