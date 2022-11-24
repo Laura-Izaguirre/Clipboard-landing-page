@@ -204,7 +204,6 @@ body {
   .main__container__content {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 55%;
   }
   .main__container__content__text-align {
@@ -224,6 +223,9 @@ body {
   }
   .main__container__content__icon {
     width: 10%;
+  }
+  .main__container__centered-content {
+    align-items: center;
   }
   .main__icons-container {
     display: flex;

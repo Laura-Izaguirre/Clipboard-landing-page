@@ -292,7 +292,6 @@ body {
             &__content {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
                 width: 55%;
                 
                 
@@ -320,6 +319,10 @@ body {
                 &__icon {
                     width: 10%;
                 }
+            }
+
+            &__centered-content {
+                align-items: center;
             }
     
         }
