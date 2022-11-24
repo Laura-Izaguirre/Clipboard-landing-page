@@ -15,6 +15,7 @@ body {
   background-image: url("./images/bg-header-mobile.png");
   background-repeat: no-repeat;
   width: 100%;
+  background-size: cover;
 }
 .header .principal-icon {
   width: 30%;
